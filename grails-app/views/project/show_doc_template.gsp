@@ -19,7 +19,7 @@
         </li>
         <li>
           <g:link action="show" resource="${this.project}">
-            Show Project
+            ${this.project.name}
           </g:link>
         </li>
         <li class="active">Project Document Template</li>

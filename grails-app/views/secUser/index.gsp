@@ -31,7 +31,7 @@
           <thead>
             <tr>
               <th class="td-1">#</th>
-              <th>Name</th>
+              <th>Name ${secUserCount ?: 0}</th>
               <th class="td-4">Email</th>
               <th class="td-4">Username</th>
               <th class="td-2">Enabled</th>
@@ -58,7 +58,7 @@
           </tbody>
         </table>
         <div class="pagination">
-          <g:paginate total="${secRoleCount ?: 0}" />
+          <g:paginate total="${secUserCount ?: 0}" />
         </div>
       </div>
     </div>

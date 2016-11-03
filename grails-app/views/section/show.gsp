@@ -15,18 +15,18 @@
       <ol class="breadcrumb">
         <li>
           <g:link controller="project" action="show" id="${projectInstance.id}">
-            Show Project
+            ${projectInstance.name}
           </g:link>
         </li>
         <li class="active">Show Section</li>
       </ol>
       <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="projectActions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="showOptions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <i class="glyphicon glyphicon-cog"></i>
           Options
           <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="projectActions">
+        <ul class="dropdown-menu" aria-labelledby="showOptions">
           <li>
             <g:link action="edit" resource="${this.section}">
               <i class="glyphicon glyphicon-pencil"></i>

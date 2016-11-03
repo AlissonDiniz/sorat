@@ -14,17 +14,17 @@
       <ol class="breadcrumb">
         <li>
           <g:link controller="project" action="show" id="${projectInstance.id}">
-            Show Project
+            ${projectInstance.name}
           </g:link>
         </li>
         <li>
           <g:link controller="requirement" action="show" id="${requirementInstance.id}">
-            Show Requirement
+            ${requirementInstance.name}
           </g:link>
         </li>
         <li>
-          <g:link controller="requirement" action="show" id="${requirementActionInstance.id}">
-            Show Action
+          <g:link controller="requirementAction" action="show" id="${requirementActionInstance.id}">
+            ${requirementActionInstance.title}
           </g:link>
         </li>
         <li>

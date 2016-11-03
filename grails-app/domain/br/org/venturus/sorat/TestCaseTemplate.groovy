@@ -29,7 +29,6 @@ class TestCaseTemplate {
     expectedResults blank: false;
     keyWord blank: false;
     testOrder blank: false;
-    requirementAction blank: false;
     userCreated nullable: true;
     userUpdated nullable: true;
   }

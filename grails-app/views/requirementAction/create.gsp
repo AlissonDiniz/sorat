@@ -14,12 +14,12 @@
       <ol class="breadcrumb">
         <li>
           <g:link controller="project" action="show" id="${projectInstance.id}">
-            Show Project
+            ${projectInstance.name}
           </g:link>
         </li>
         <li>
           <g:link controller="requirement" action="show" id="${requirementInstance.id}">
-            Show Requirement
+            ${requirementInstance.name}
           </g:link>
         </li>
         <li class="active">Create Action</li>
@@ -38,7 +38,7 @@
           </div>
         </g:eachError>
       </g:hasErrors>
-      <g:uploadForm action="save">
+      <g:form action="save">
         <g:hiddenField name="requirement" value="${requirementInstance.id}" />
         <div class="row">
           <div class="col-sm-12 col-md-8 col-lg-6">
@@ -83,7 +83,7 @@
             </button>
           </div>
         </div>
-      </g:uploadForm>
+      </g:form>
     </div>
     <asset:javascript src="domain/requirement-action.js"/>
   </body>

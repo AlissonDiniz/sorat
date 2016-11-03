@@ -12,7 +12,7 @@ class SecUserController {
   def passwordEncoder;
     
   def index(Integer max) {
-    params.max = Math.min(max ?: 10, 100)
+    params.max = Math.min(max ?: 15, 100)
     respond SecUser.list(params), model:[secUserCount: SecUser.count()]
   }
 

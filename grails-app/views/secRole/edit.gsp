@@ -8,10 +8,6 @@
     <div class="row">
       <h3 class="page-header">
         Edit Role
-        <g:link class="btn btn-primary pull-right" action="create">
-          <i class="glyphicon glyphicon-plus-sign"></i>
-          Create Role
-        </g:link>
       </h3>
     </div>
     <div class="row">

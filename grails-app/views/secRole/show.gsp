@@ -8,13 +8,9 @@
     <div class="row">
       <h3 class="page-header">
         Show Role
-        <g:link class="btn btn-primary pull-right" action="create">
-          <i class="glyphicon glyphicon-plus-sign"></i>
-          Create New Role
-        </g:link>
       </h3>
     </div>
-    <div class="row">
+    <div class="row row-actions">
       <ol class="breadcrumb">
         <li>
           <g:link action="index">
@@ -23,6 +19,27 @@
         </li>
         <li class="active">Show Role</li>
       </ol>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="showOptions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <i class="glyphicon glyphicon-cog"></i>
+          Options
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="showOptions">
+          <li>
+            <g:link action="edit" resource="${this.secUser}">
+              <i class="glyphicon glyphicon-pencil"></i>
+              Edit
+            </g:link>
+          </li>
+          <li>
+            <g:link action="create">
+              <i class="glyphicon glyphicon-plus-sign"></i>
+              Create New Role
+            </g:link>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="row">
       <g:if test="${flash.message}">
@@ -49,20 +66,6 @@
               <div class="property-value" aria-labelledby="description-label">${secRole.description}</div>
             </li>
           </ol>
-          <div class="col-lg-12">
-            <div class="row">
-              <g:form class="pull-left" resource="${this.secRole}" method="DELETE">
-                <g:link class="btn btn-primary" action="edit" resource="${this.secRole}">
-                  <i class="glyphicon glyphicon-pencil"></i>
-                  Edit
-                </g:link>
-                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');" />
-                  <i class="glyphicon glyphicon-trash"></i>
-                  Delete
-                </button>
-              </g:form>
-            </div>
-          </div>
         </div>
       </div>
     </div>

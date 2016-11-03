@@ -21,4 +21,8 @@ class SecRole implements Serializable {
     cache true
   }
   
+  public String toString(){
+    return this.description;
+  }
+  
 }

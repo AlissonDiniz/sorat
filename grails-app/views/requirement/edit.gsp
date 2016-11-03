@@ -14,12 +14,12 @@
       <ol class="breadcrumb">
         <li>
           <g:link controller="project" action="show" id="${projectInstance.id}">
-            Show Project
+            ${projectInstance.name}
           </g:link>
         </li>
         <li>
           <g:link action="show" resource="${this.requirement}">
-            Show Requirement
+            ${this.requirement.name}
           </g:link>
         </li>
         <li class="active">Edit Requirement</li>

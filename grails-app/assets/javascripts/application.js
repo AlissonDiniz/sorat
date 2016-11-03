@@ -20,7 +20,7 @@ $(document).ready(function () {
     }
   });
   $('select.multiple').multiselect();
-  $('textarea.summernote').summernote({height: 300});
+  $('textarea.summernote').summernote({height: 700});
   $("div#requirement-sortable-container").sortable({
     update: function (e, ui) {
       $.post("/requirement/changeOrder/" + $('div#show-project').data('id'), {requirement: ui.item.data('id'), order: ui.item.index()}).fail(function () {
