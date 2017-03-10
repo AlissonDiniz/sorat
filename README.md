@@ -1,2 +1,9 @@
 # Sorat
-Software to manager system requirements and auto generate test cases selenium code. 
+
+Software to the management requirements and auto generate test cases.
+
+
+Technologies used:
+  - Grails Framework
+  - Spring Security
+  - Twitter BootStrap
