@@ -1,6 +1,6 @@
 # Sorat
 
-Software to the management requirements and auto generate test cases.
+Software for managing requirements and auto generate test cases.
 
 
 Technologies used:
