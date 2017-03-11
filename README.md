@@ -12,5 +12,4 @@ Technologies used:
   - JQuery
   - Mysql Database
 
-
-* Spring Security to work with the Active Directory LDAP server.
+Spring Security to work with the Active Directory LDAP server.
